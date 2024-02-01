@@ -107,7 +107,7 @@ public struct WwiseSoundEngine_2023_1
 			SE.PublicDefinitions.Add("AK_ENABLE_ASSERTS");
 		}
 
-		if (Target.Configuration != UnrealTargetConfiguration.Shipping && Target.Configuration != UnrealTargetConfiguration.Test && WwiseUEPlatformInstance.SupportsCommunication)
+		if (Target.Configuration != UnrealTargetConfiguration.Shipping && WwiseUEPlatformInstance.SupportsCommunication)
 		{
 			AkLibs.Add("CommunicationCentral");
 			SE.PublicDefinitions.Add("AK_ENABLE_COMMUNICATION=1");
