@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A79AF1FA-EA88-417E-A3B3-5DCEC7C50234}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Character" ID="{A79AF1FA-EA88-417E-A3B3-5DCEC7C50234}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="CharacterLocomotion" ID="{484B5511-F119-4FFF-9504-4116905C8919}" ShortID="735628878">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="CharacterFootstep" ID="{8682E987-4539-4CCE-BBA8-47067FD147BF}" ShortID="825487802">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Running" ID="{885AB1BE-D64D-4C72-8833-03174D5968AB}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="LocomotionType" ID="{02827571-3A46-4BB5-8961-284B9AAF0A5F}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="CharacterRunning" ID="{55AF1289-FB2D-4491-856B-9BC719461C73}" ShortID="303714259">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="SurfaceType" ID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Concrete" ID="{D47C650A-0787-483B-8D3A-BA2812E0A669}" ShortID="484116629">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7D89A7BD-78C9-4F32-8B80-EAC1CFE70D68}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9B44EFCA-77F8-4EDC-AB98-E05A40B54B45}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="footstep_Running_demo_surface_01" ID="{0D429530-B01D-449C-AEF2-DC05E83AB70C}" ShortID="709456056">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_01" ID="{1747B8FF-AAF9-4E1A-AD72-97D02A8151C4}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="691919377"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_01" ID="{1747B8FF-AAF9-4E1A-AD72-97D02A8151C4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_02" ID="{5EBE10C0-3B1D-4D59-A8F2-F3FD67F49697}" ShortID="99478598">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_02" ID="{63397F00-2093-4D29-80A0-C6D797867BEF}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="955811750"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_02" ID="{63397F00-2093-4D29-80A0-C6D797867BEF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_03" ID="{652511CE-3D05-4548-9B72-1E398F7C0EF6}" ShortID="683872404">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_03" ID="{1ED3AE9B-430D-4716-80ED-5F2B343223E6}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="665399555"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_03" ID="{1ED3AE9B-430D-4716-80ED-5F2B343223E6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_04" ID="{283668C9-4FB7-4E21-A18C-C9CF1EC0C9D7}" ShortID="66031363">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_04" ID="{D5B6028C-F764-46B7-8237-85134EEE9C96}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="424692934"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_04" ID="{D5B6028C-F764-46B7-8237-85134EEE9C96}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_05" ID="{CC28D8F9-0BA4-4F54-BD6F-A5EE09F69466}" ShortID="807362956">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_05" ID="{32E614EC-68F3-48DB-B757-F3D7C01DE9DC}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="489768321"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_05" ID="{32E614EC-68F3-48DB-B757-F3D7C01DE9DC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_06" ID="{106FCFCC-5452-4569-BA25-182697718E89}" ShortID="442610298">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_06" ID="{A1AA086A-38A7-4F17-BDBA-0C915B118932}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="389105870"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_06" ID="{A1AA086A-38A7-4F17-BDBA-0C915B118932}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_07" ID="{832C1B0C-CF69-4D3D-BF96-78367780C6D3}" ShortID="1071808446">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_07" ID="{7353FDEB-E82F-4726-B684-4365189F8CAB}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="775365675"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_07" ID="{7353FDEB-E82F-4726-B684-4365189F8CAB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_08" ID="{21502CA2-E2CE-407D-8A73-3EC4AAF4CD98}" ShortID="683494680">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_08" ID="{C6131FA4-CB67-4E0C-9538-75EB64EA3128}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_08.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="89323189"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_08" ID="{C6131FA4-CB67-4E0C-9538-75EB64EA3128}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_09" ID="{34D47873-5B7E-457D-90D2-5184E5A69335}" ShortID="659814062">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_09" ID="{217F243A-9E38-4975-987F-775AE668A5E4}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_09.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="270194006"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_09" ID="{217F243A-9E38-4975-987F-775AE668A5E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_10" ID="{7896F5CB-D765-4DB1-BC0D-8FBD4447366E}" ShortID="393502160">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_10" ID="{C88CAC2D-D41A-4039-82D3-CDF27D1099B7}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_10.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="866839412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_10" ID="{C88CAC2D-D41A-4039-82D3-CDF27D1099B7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Running_demo_surface_11" ID="{D3A4DCB3-A7BF-4FA7-99E5-3D149822E698}" ShortID="1047332090">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Running_demo_surface_11" ID="{08811806-BD0B-41AF-835D-5FBB9D17C761}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_11.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="440186460"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Running_demo_surface_11" ID="{08811806-BD0B-41AF-835D-5FBB9D17C761}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Concrete" ID="{D47C650A-0787-483B-8D3A-BA2812E0A669}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}"/>
+												<ItemList>
+													<ItemRef Name="Concrete" ID="{D47C650A-0787-483B-8D3A-BA2812E0A669}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="CharacterWalking" ID="{21530AF3-FED5-4EEB-86C2-7505F0F057A4}" ShortID="240331986">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="SurfaceType" ID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Concrete" ID="{B694B95F-DC81-4B5F-88B6-19293F9B7DD8}" ShortID="433443666">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D4AEAE94-68D6-4BA6-8A3F-11CF1C70D235}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FF636B0B-AD5A-475C-9A96-E1724092EED0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="footstep_Walking_demo_surface_01" ID="{E4E13DB0-9D6B-4AC1-ABF9-E02D71F0DE7F}" ShortID="386328360">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_01" ID="{7AC3E539-A90F-4E0C-A9BE-F6EC019B8522}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="355330665"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_01" ID="{7AC3E539-A90F-4E0C-A9BE-F6EC019B8522}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_02" ID="{173A6D29-4772-4CD5-93FF-7EDBF0E61AE8}" ShortID="84321331">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_02" ID="{D4AAAAE2-33BE-4263-9C7A-2C20F5699666}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="758700365"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_02" ID="{D4AAAAE2-33BE-4263-9C7A-2C20F5699666}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_03" ID="{5D480E62-401F-462A-8224-A4AA90865E5E}" ShortID="860066665">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_03" ID="{B34973CC-E7F0-4AE9-8346-4CE374FD846C}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="681831997"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_03" ID="{B34973CC-E7F0-4AE9-8346-4CE374FD846C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_04" ID="{1F517B88-65B7-430C-B852-5260AE3AAC4D}" ShortID="62341361">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_04" ID="{C6494E72-3250-414F-8E8A-002FB902C49B}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="471642196"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_04" ID="{C6494E72-3250-414F-8E8A-002FB902C49B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_05" ID="{0F8672B5-3978-4535-A897-612CD827CA41}" ShortID="897480240">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_05" ID="{253C5E08-5327-4D95-AC7A-606C9D184CCC}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="613321396"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_05" ID="{253C5E08-5327-4D95-AC7A-606C9D184CCC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_06" ID="{4FCE8312-5A47-4DA6-BC4D-103082119E0D}" ShortID="413736023">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_06" ID="{4415B333-7BE6-498E-BCED-C067FFB5C9F3}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="39859574"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_06" ID="{4415B333-7BE6-498E-BCED-C067FFB5C9F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_07" ID="{386F6EC9-189D-4CFF-860B-6C40474606E6}" ShortID="932187584">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_07" ID="{D5424936-0C30-4741-BDF2-2EEF8D36E2AC}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="188761348"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_07" ID="{D5424936-0C30-4741-BDF2-2EEF8D36E2AC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_08" ID="{9A971A2A-4904-45AB-9868-E51423F70F00}" ShortID="777381080">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_08" ID="{A8AD83E7-26FC-48C6-AAE5-F48CDAC63768}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_08.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="927137353"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_08" ID="{A8AD83E7-26FC-48C6-AAE5-F48CDAC63768}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_09" ID="{CC77A1EB-245C-43DB-A7E1-E4A5D06398B8}" ShortID="626133263">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_09" ID="{225502E9-7758-44B4-B632-98D3438DDCB0}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_09.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="22215137"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_09" ID="{225502E9-7758-44B4-B632-98D3438DDCB0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="footstep_Walking_demo_surface_10" ID="{46A27F01-190C-4333-BBF2-02C7F1EB565D}" ShortID="335837481">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="footstep_Walking_demo_surface_10" ID="{EAAA12E0-BDAF-4024-A518-A81132E3F443}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_10.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1013115460"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="footstep_Walking_demo_surface_10" ID="{EAAA12E0-BDAF-4024-A518-A81132E3F443}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Concrete" ID="{B694B95F-DC81-4B5F-88B6-19293F9B7DD8}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}"/>
+												<ItemList>
+													<ItemRef Name="Concrete" ID="{B694B95F-DC81-4B5F-88B6-19293F9B7DD8}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="CharacterFootPlant" ID="{B3246D0C-41E7-4624-A8BD-FABB1BAD3CA0}" ShortID="670598840">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="SurfaceType" ID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Concrete" ID="{16D09609-15C6-4BD5-BA67-10497B2FAB25}" ShortID="267358575">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Soft" ID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="intFootPlant" ID="{C3D5E06B-7437-448E-A523-4CAC2EA7F86F}" WorkUnitID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="ConcreteSoft" ID="{7CA8DFD7-D22F-430B-8499-8B30DDCA1673}" ShortID="682926014">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{36206986-E378-42B3-B6C8-DF2C443A11BE}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F6A888E6-1835-4476-BD5A-28307979EAEB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_01" ID="{44601774-EE7C-4D3E-951F-F993F285C8FA}" ShortID="725301865">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_01" ID="{85141C79-240D-4E00-8EF7-D468D21051BA}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="836376308"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_01" ID="{85141C79-240D-4E00-8EF7-D468D21051BA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_02" ID="{D5511C8D-581E-48C6-95FB-1BC5C38BC10A}" ShortID="529554815">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_02" ID="{D297EEB6-C96C-4DBD-A739-7CDA86DA46AF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="203733624"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_02" ID="{D297EEB6-C96C-4DBD-A739-7CDA86DA46AF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_03" ID="{D1D2DA94-3400-4F29-8B35-2E3BA6A2C1EC}" ShortID="608566448">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_03" ID="{08CE1E88-88DC-4CE1-82B3-77B92D69F813}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="631132136"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_03" ID="{08CE1E88-88DC-4CE1-82B3-77B92D69F813}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_04" ID="{BB885CDE-356C-4A06-94DD-7157EF3F6D9A}" ShortID="977349615">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_04" ID="{B0D28EA2-16B5-4AE4-8E25-04B024972B40}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="176080295"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_04" ID="{B0D28EA2-16B5-4AE4-8E25-04B024972B40}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_05" ID="{A2D19DA6-82F6-42E8-8F44-57723F3BF8EF}" ShortID="765694407">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_05" ID="{1CF98F00-80A8-4688-8C3A-EC003743A191}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="313256218"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_05" ID="{1CF98F00-80A8-4688-8C3A-EC003743A191}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_06" ID="{BF02723C-C55C-490F-A0CB-25EF88A37037}" ShortID="743587370">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_06" ID="{BDB7A153-8F7E-4CDF-A7E9-95BA705D8D7A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="124098580"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_06" ID="{BDB7A153-8F7E-4CDF-A7E9-95BA705D8D7A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_soft_demo_surface_07" ID="{20166B61-2763-4D5E-8633-F6C6F8B61864}" ShortID="1060539236">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_soft_demo_surface_07" ID="{38E81CDC-EA44-4980-8BA1-988D57AFC2E0}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="517057207"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_soft_demo_surface_07" ID="{38E81CDC-EA44-4980-8BA1-988D57AFC2E0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="ConcreteHard" ID="{2C97FBF2-ACC5-400B-B6E7-362B167FBEC4}" ShortID="530253945">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{74DB2056-6098-4431-81F0-5C329C957CB6}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1CC4392F-D0FB-4271-9F86-AB408AEF57BE}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_07" ID="{529D122E-5AB1-49E8-90AD-7679E04D7392}" ShortID="287793560">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_07" ID="{5803B288-71F1-4694-B59D-BE5E2DE22035}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="275954565"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_07" ID="{5803B288-71F1-4694-B59D-BE5E2DE22035}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_02" ID="{E0774972-9FD7-4AA0-93B2-FB66C2220478}" ShortID="143204605">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_02" ID="{1A1DD3E0-16AB-4923-BB67-468A49B59116}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="939097620"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_02" ID="{1A1DD3E0-16AB-4923-BB67-468A49B59116}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_04" ID="{9BDD40B2-8A42-490D-ADA5-643403CC27BA}" ShortID="59856786">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_04" ID="{DEFB799F-22E0-4889-99E6-81E28AC4F2E3}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="505267795"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_04" ID="{DEFB799F-22E0-4889-99E6-81E28AC4F2E3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_06" ID="{B35D25B6-5B6D-4976-84C9-13037ED0BF41}" ShortID="442601109">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_06" ID="{74E69DBF-7CA4-4783-8F27-1154B82E3A77}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="693094671"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_06" ID="{74E69DBF-7CA4-4783-8F27-1154B82E3A77}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_03" ID="{FA224E43-F579-41F5-AFB0-4215CE2C88C1}" ShortID="14805561">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_03" ID="{E0F65B9F-B8A1-4B81-AB1F-FE874B7B5FFA}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="440373490"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_03" ID="{E0F65B9F-B8A1-4B81-AB1F-FE874B7B5FFA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_01" ID="{6E7977D7-0FBD-4295-8709-CECB70E7C803}" ShortID="774333183">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_01" ID="{B7768610-7828-4D48-A0FA-E2AE069C80B4}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="162739623"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_01" ID="{B7768610-7828-4D48-A0FA-E2AE069C80B4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_05" ID="{9504A6AA-E79B-4B20-B4F4-88AD0190DED9}" ShortID="375622772">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_05" ID="{582663BF-164A-4693-AB16-CDCCEA6191BD}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="684821647"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_05" ID="{582663BF-164A-4693-AB16-CDCCEA6191BD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="footstep_FootPlant_hard_demo_surface_08" ID="{3824D85C-0075-44B1-A51F-4A57E1D6A1B6}" ShortID="535632371">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CharacterLocomotion" ID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="footstep_FootPlant_hard_demo_surface_08" ID="{4D4CA103-9A10-48AC-8F0B-FE13E4DC59AD}">
+																	<Language>SFX</Language>
+																	<AudioFile>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_08.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="859550233"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="footstep_FootPlant_hard_demo_surface_08" ID="{4D4CA103-9A10-48AC-8F0B-FE13E4DC59AD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="ConcreteSoft" ID="{7CA8DFD7-D22F-430B-8499-8B30DDCA1673}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="ConcreteHard" ID="{2C97FBF2-ACC5-400B-B6E7-362B167FBEC4}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Hard" ID="{6D799617-FF75-4F84-85AC-93F6E318D6CE}"/>
+														<ItemList>
+															<ItemRef Name="ConcreteHard" ID="{2C97FBF2-ACC5-400B-B6E7-362B167FBEC4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Soft" ID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}"/>
+														<ItemList>
+															<ItemRef Name="ConcreteSoft" ID="{7CA8DFD7-D22F-430B-8499-8B30DDCA1673}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Concrete" ID="{16D09609-15C6-4BD5-BA67-10497B2FAB25}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}"/>
+												<ItemList>
+													<ItemRef Name="Concrete" ID="{16D09609-15C6-4BD5-BA67-10497B2FAB25}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="CharacterFootPlant" ID="{B3246D0C-41E7-4624-A8BD-FABB1BAD3CA0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="CharacterRunning" ID="{55AF1289-FB2D-4491-856B-9BC719461C73}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="CharacterWalking" ID="{21530AF3-FED5-4EEB-86C2-7505F0F057A4}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Walking" ID="{0D7AA56E-1758-4F27-99C6-BB00E17849E4}"/>
+										<ItemList>
+											<ItemRef Name="CharacterWalking" ID="{21530AF3-FED5-4EEB-86C2-7505F0F057A4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="FootPlant" ID="{95F3458A-02EE-48C6-9EB9-69FBB5E40907}"/>
+										<ItemList>
+											<ItemRef Name="CharacterFootPlant" ID="{B3246D0C-41E7-4624-A8BD-FABB1BAD3CA0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Running" ID="{885AB1BE-D64D-4C72-8833-03174D5968AB}"/>
+										<ItemList>
+											<ItemRef Name="CharacterRunning" ID="{55AF1289-FB2D-4491-856B-9BC719461C73}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<BlendContainer Name="CharacterClothes" ID="{37BF5872-CDD3-447D-9BAB-BB35573C8C8C}" ShortID="499259067">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Clothes_draft_layer01" ID="{501CC493-2865-4392-9142-E1FF76652B94}" ShortID="120299615">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Clothes_draft_layer01" ID="{DCD111E9-4142-42DB-93D5-3941D8140ED5}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="598.818"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.961789618825436"/>
+												<Property Name="LoopEnd" Type="Real64" Value="14.7547271069811"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Locomotion\DemoClothes\Clothes_draft_layer01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="448651826"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{35FEEB79-BA85-4B79-94CC-17A483726BB4}" ShortID="487987087">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5891A826-6AA6-4FE2-B617-419F69CC295F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>19.98</XPos>
+																				<YPos>-20.06661</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>150</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Clothes_draft_layer01" ID="{DCD111E9-4142-42DB-93D5-3941D8140ED5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Clothes_draft_layer02" ID="{DE9A0D88-A24B-4C39-BCAB-770F1BB30C9B}" ShortID="81456337">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Clothes_draft_layer02" ID="{03079961-A2E5-4F3E-9FB2-628F1EA3F610}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="351.802"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.43112280839329"/>
+												<Property Name="LoopEnd" Type="Real64" Value="6.18248452887399"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Locomotion\DemoClothes\Clothes_draft_layer02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="885665060"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{3DD73715-31A9-44F0-9FB4-888AC6CA7993}" ShortID="714852629">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{71161CD9-37C2-44BE-A002-9FED1B6F6FF6}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>19.98</XPos>
+																				<YPos>-20.06661</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>150</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{66783D93-9384-4363-B958-6157BE49AC75}" ShortID="373554731">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{66C2DDD6-B422-4249-BCEE-51A972038C15}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>49</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>150</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Clothes_draft_layer02" ID="{03079961-A2E5-4F3E-9FB2-628F1EA3F610}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Clothes_draft_layer03" ID="{7F04DF6D-E183-4596-80EC-8B8093CD1FA3}" ShortID="869367844">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Clothes_draft_layer03" ID="{45B435C5-0C37-480C-AF02-B3EFA14120EC}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="471.612"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.421325060283479"/>
+												<Property Name="LoopEnd" Type="Real64" Value="8.94296418279127"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Locomotion\DemoClothes\Clothes_draft_layer03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="379102405"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1BBFABEC-4EB1-4C44-983C-1C920A37ED27}" ShortID="119663037">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{02B00DF3-C460-4D2C-B4A2-685624B95845}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>75.6345</XPos>
+																				<YPos>-10.798</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>150</XPos>
+																				<YPos>3.96496</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{E815CFCA-3D47-4EAB-92A2-A98595798DCF}" ShortID="847790577">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8EBF0717-EE57-4F78-A690-743C56D89D1E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>53</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>87.7095</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>121.287</XPos>
+																				<YPos>47</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>150</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Clothes_draft_layer03" ID="{45B435C5-0C37-480C-AF02-B3EFA14120EC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

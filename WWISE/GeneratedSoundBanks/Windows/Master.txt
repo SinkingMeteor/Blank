@@ -1,0 +1,82 @@
+Event	ID	Name			Wwise Object Path	Notes
+	705739452	CharacterFootstep			\Character\CharacterLocomotion\CharacterFootstep	
+	928320794	TestClothesRun			\Character\LocomotionTestEvents\TestClothesRun	
+	1097980931	TestEvent			\Default Work Unit\TestEvent	
+	3097777697	TestClothesStart			\Character\LocomotionTestEvents\TestClothesStart	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	63790334	SurfaceType			\Default Work Unit\SurfaceType	
+	3117332691	intFootPlant			\Default Work Unit\intFootPlant	
+	3587484858	LocomotionType			\Default Work Unit\LocomotionType	
+
+Switch	ID	Name	Switch Group			Notes
+	344481046	Ice	SurfaceType			
+	437659151	Rubber	SurfaceType			Резиновые коврики
+	787898836	Snow	SurfaceType			
+	841620460	Concrete	SurfaceType			Бетон
+	1127618254	Marble	SurfaceType			Мрамор
+	1791601991	Parquet	SurfaceType			Паркет
+	2058049674	Wood	SurfaceType			
+	2412606308	Carpet	SurfaceType			Ковровые покрытия
+	2449969375	Glass	SurfaceType			
+	2473969246	Metal	SurfaceType			Метал плотный
+	2612187595	WoodCreaky	SurfaceType			
+	2637485245	Corpse	SurfaceType			
+	2654748154	Water	SurfaceType			
+	3513072909	Branches	SurfaceType			
+	3891783285	MetalGratings	SurfaceType			Метал решетки
+	670602561	Soft	intFootPlant			
+	3599861390	Hard	intFootPlant			
+	340271938	Walking	LocomotionType			
+	499013305	Crouching	LocomotionType			
+	503499828	Turning	LocomotionType			
+	1861082004	FootPlant	LocomotionType			Постановка ноги
+	1961208145	Ascending	LocomotionType			
+	3654333339	Descending	LocomotionType			
+	3691594375	Sprinting	LocomotionType			
+	3863236874	Running	LocomotionType			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	660234746	CharacterClothesVelocityHorzontal			\Default Work Unit\CharacterClothesVelocityHorzontal	
+	3621444635	CharacterLocomotionVelocityHorzontal			\Default Work Unit\CharacterLocomotionVelocityHorzontal	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	22215137	footstep_Walking_demo_surface_09	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_09_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_09		5157
+	39859574	footstep_Walking_demo_surface_06	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_06_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_06		4029
+	53219981	TestSound	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Forest_A1411E78.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound		304248
+	89323189	footstep_Running_demo_surface_08	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_08_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_08		2898
+	124098580	footstep_FootPlant_soft_demo_surface_06	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_06_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_06		6027
+	162739623	footstep_FootPlant_hard_demo_surface_01	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_01_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_01		7116
+	176080295	footstep_FootPlant_soft_demo_surface_04	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_04_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_04		5803
+	188761348	footstep_Walking_demo_surface_07	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_07_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_07		4583
+	203733624	footstep_FootPlant_soft_demo_surface_02	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_02_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_02		4072
+	270194006	footstep_Running_demo_surface_09	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_09_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_09		2637
+	275954565	footstep_FootPlant_hard_demo_surface_07	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_07_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_07		4525
+	313256218	footstep_FootPlant_soft_demo_surface_05	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_05_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_05		4293
+	355330665	footstep_Walking_demo_surface_01	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_01_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_01		5523
+	389105870	footstep_Running_demo_surface_06	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_06_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_06		2313
+	424692934	footstep_Running_demo_surface_04	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_04_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_04		4146
+	440186460	footstep_Running_demo_surface_11	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_11_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_11		2528
+	440373490	footstep_FootPlant_hard_demo_surface_03	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_03_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_03		5467
+	448651826	Clothes_draft_layer01	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoClothes\Clothes_draft_layer01_D3D602BC.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterClothes\Clothes_draft_layer01		154229
+	471642196	footstep_Walking_demo_surface_04	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_04_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_04		4548
+	489768321	footstep_Running_demo_surface_05	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_05_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_05		2681
+	505267795	footstep_FootPlant_hard_demo_surface_04	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_04_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_04		6615
+	517057207	footstep_FootPlant_soft_demo_surface_07	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_07_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_07		4401
+	613321396	footstep_Walking_demo_surface_05	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_05_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_05		3275
+	631132136	footstep_FootPlant_soft_demo_surface_03	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_03_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_03		3863
+	665399555	footstep_Running_demo_surface_03	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_03_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_03		2732
+	681831997	footstep_Walking_demo_surface_03	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_03_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_03		3987
+	684821647	footstep_FootPlant_hard_demo_surface_05	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_05_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_05		5954
+	691919377	footstep_Running_demo_surface_01	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_01_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_01		3669
+	693094671	footstep_FootPlant_hard_demo_surface_06	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_06_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_06		4616
+	758700365	footstep_Walking_demo_surface_02	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_02_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_02		4988
+	775365675	footstep_Running_demo_surface_07	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_07_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_07		3466
+	836376308	footstep_FootPlant_soft_demo_surface_01	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_01_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteSoft\footstep_FootPlant_soft_demo_surface_01		5443
+	859550233	footstep_FootPlant_hard_demo_surface_08	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_08_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_08		4833
+	866839412	footstep_Running_demo_surface_10	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_10_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_10		2787
+	927137353	footstep_Walking_demo_surface_08	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_08_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_08		4343
+	939097620	footstep_FootPlant_hard_demo_surface_02	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_02_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterFootPlant\Concrete\ConcreteHard\footstep_FootPlant_hard_demo_surface_02		3679
+	955811750	footstep_Running_demo_surface_02	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_02_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterRunning\Concrete\footstep_Running_demo_surface_02		3945
+	1013115460	footstep_Walking_demo_surface_10	G:\Displacement\trunk\WWISE\.cache\Windows\SFX\Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_10_8E324C96.wem		\Actor-Mixer Hierarchy\Character\CharacterLocomotion\CharacterFootstep\CharacterWalking\Concrete\footstep_Walking_demo_surface_10		5257
+

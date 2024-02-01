@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{45B6C084-512F-4B14-922F-50FA3878037C}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{45B6C084-512F-4B14-922F-50FA3878037C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CharacterLocomotionVelocityHorzontal" ID="{341D3B1F-A45F-47D6-B3F8-8728DE1FB462}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="CharacterLocomotionVelocityVertical" ID="{0417D7DC-B043-4EB9-9861-2CEA9867BEEA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="150"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="5"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

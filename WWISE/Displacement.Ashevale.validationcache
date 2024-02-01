@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="119">
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Virtual Acoustics\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Triggers\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Switches\Default Work Unit.wwu" DateLow="1706423106" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\States\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\SoundBanks\Default Work Unit.wwu" DateLow="1706252297" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Queries\Factory Queries.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Queries\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Presets\Factory Spatial Audio.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Presets\Factory Reflect.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Presets\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Modulators\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Mixing Sessions\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Metadata\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Game Parameters\Settings.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Game Parameters\Default Work Unit.wwu" DateLow="1706680844" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Events\Default Work Unit.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Events\Character.wwu" DateLow="1706680844" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Effects\Factory Mastering Suite.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Effects\Factory Effects.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Effects\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Displacement.wproj" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Conversion Settings\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Control Surface Sessions\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Audio Devices\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Attenuations\Default Work Unit.wwu" DateLow="1706109038" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\VO.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\UI.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\NPC.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\Music.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\Cinematic.wwu" DateLow="1706109037" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\Character.wwu" DateLow="1706680844" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Projects\Blank\Blank\WWISE\Actor-Mixer Hierarchy\Ambient.wwu" DateLow="1706109037" DateHigh="0"/>
+</ValidationCache>

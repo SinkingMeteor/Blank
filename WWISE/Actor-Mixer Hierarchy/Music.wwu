@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FC71D7F3-75DE-4983-948E-C7579AB4BE58}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{FC71D7F3-75DE-4983-948E-C7579AB4BE58}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="7"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

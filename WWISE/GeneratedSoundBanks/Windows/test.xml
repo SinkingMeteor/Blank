@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="3157003241" Type="User" GUID="{A8DE5848-A672-48DC-A4D2-1B01B8E0AB83}" Language="SFX" Hash="{82F58C59-FB81-BBB6-00D2-776E2CAEA9B3}">
+			<ObjectPath>\SoundBanks\Default Work Unit\test</ObjectPath>
+			<ShortName>test</ShortName>
+			<Path>test.bnk</Path>
+			<Media>
+				<File Id="53219981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest.wav</ShortName>
+					<CachePath>SFX/Forest_A1411E78.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" GUID="{07F5F544-6B6C-4C98-8488-BE0FFD3B44C9}" DurationType="OneShot" DurationMin="1.5837083" DurationMax="1.5837083">
+					<MediaRefs>
+						<MediaRef Id="53219981"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{49E7087F-07B1-DEC5-6084-6446B8EDA22D}</FileHash>
+</SoundBanksInfo>

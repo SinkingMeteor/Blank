@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{881F2425-BDE8-816D-ED7E-5AAED7E77034}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{FDFC91DB-1492-4B4A-9E41-2D3972F8ABE9}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{5BFF2520-3687-4C97-9F03-DC0275B6D5CA}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="77978275" Name="Ambient" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Ambient" GUID="{78DD8BAA-E635-43C8-B809-DC2863A23405}"/>
+				<Bus Id="245700991" Name="NPCEfforts" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\NPC\NPCEfforts" GUID="{F6DF7679-807B-45CB-BE29-A9846B5340D8}"/>
+				<Bus Id="436743010" Name="Character" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Character" GUID="{D23A56BB-9818-4BAF-BB3B-AD59D0E783A4}"/>
+				<Bus Id="566114453" Name="CharacterLocomotion" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Character\CharacterLocomotion" GUID="{DCB19B41-1410-4DD3-A3C8-C4C7C9737EEB}"/>
+				<Bus Id="662417162" Name="NPC" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\NPC" GUID="{DAB2C154-1787-44A0-A114-6BCE9762D27C}"/>
+				<Bus Id="869042049" Name="VOCharacter" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VO\VOCharacter" GUID="{A6A90F28-B113-4947-9794-287EDE2C2611}"/>
+				<Bus Id="931844945" Name="HDR" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR" GUID="{0BB57C00-18F7-4EF0-AB81-BB135D555F86}"/>
+				<Bus Id="1217116541" Name="NPCLocomotion" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\NPC\NPCLocomotion" GUID="{E8EFDE5B-D449-4BD6-AA83-56B87D0608CB}"/>
+				<Bus Id="1534528548" Name="VO" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VO" GUID="{BB7E4B5C-2398-40D2-B9E0-E2DF3B0A3AD9}"/>
+				<Bus Id="1551306167" Name="UI" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI" GUID="{E1A94E31-2817-4313-AF65-8FCCDC15D171}"/>
+				<Bus Id="1838596016" Name="Cinematic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cinematic" GUID="{5FE047FD-A193-429C-8630-E217AA7048E6}"/>
+				<Bus Id="2649473473" Name="VONPC" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VO\VONPC" GUID="{02CD54D6-0116-4608-9A90-70BA561873E8}"/>
+				<Bus Id="2785569367" Name="MusicDrones" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\MusicDrones" GUID="{3D8EA5EC-7B79-47F3-88B9-7F5D33BA813E}"/>
+				<Bus Id="3099290199" Name="CharacterEfforts" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Character\CharacterEfforts" GUID="{87CE0011-38E1-4FEE-8DB3-B10A2430E94A}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="3934156282" Name="Ambient3D" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Ambient\Ambient3D" GUID="{83B5A7F8-0756-4703-BC08-4A23A1A2B1B7}"/>
+				<Bus Id="3950933845" Name="Ambient2D" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\Ambient\Ambient2D" GUID="{37027B93-BB75-4E77-93A9-7D049B39996A}"/>
+				<Bus Id="3991942870" Name="Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music" GUID="{3CF263D0-90BB-4247-AC51-0CA53E6BFC8D}"/>
+				<Bus Id="4000439062" Name="NPCCombat" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HDR\NPC\NPCCombat" GUID="{4484AC56-473B-4EA9-8C98-1963769503A6}"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="4045295900" Name="Reverb01" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb01" GUID="{30E27D43-9CEE-4198-8175-019B7569F73F}"/>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="52935627" Name="MenuVolumeMusic" ObjectPath="\Game Parameters\Settings\MenuVolumeMusic" GUID="{2894D05A-6416-488B-B528-EBC5B815D27A}"/>
+				<GameParameter Id="660234746" Name="CharacterClothesVelocityHorzontal" ObjectPath="\Game Parameters\Default Work Unit\CharacterClothesVelocityHorzontal" GUID="{3C8F82AB-C48D-4122-B592-D06990782375}"/>
+				<GameParameter Id="708079367" Name="MenuVolumeSFX" ObjectPath="\Game Parameters\Settings\MenuVolumeSFX" GUID="{77D1D087-4D48-4C43-BACD-3B2DE9DCF3E5}"/>
+				<GameParameter Id="1162501248" Name="MenuVolumeMaster" ObjectPath="\Game Parameters\Settings\MenuVolumeMaster" GUID="{609C39AD-7113-4D92-97E9-DBAF8A284838}"/>
+				<GameParameter Id="3586738556" Name="MenuVolumeVoice" ObjectPath="\Game Parameters\Settings\MenuVolumeVoice" GUID="{7EC1A47D-23E5-4A2E-A9E3-5255EC859B73}"/>
+				<GameParameter Id="3621444635" Name="CharacterLocomotionVelocityHorzontal" ObjectPath="\Game Parameters\Default Work Unit\CharacterLocomotionVelocityHorzontal" GUID="{341D3B1F-A45F-47D6-B3F8-8728DE1FB462}"/>
+				<GameParameter Id="3791895142" Name="CharacterLocomotionVelocityVertical" ObjectPath="\Game Parameters\Default Work Unit\CharacterLocomotionVelocityVertical" GUID="{0417D7DC-B043-4EB9-9861-2CEA9867BEEA}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="63790334" Name="SurfaceType" ObjectPath="\Switches\Default Work Unit\SurfaceType" GUID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}">
+					<Switches>
+						<Switch Id="344481046" Name="Ice" ObjectPath="\Switches\Default Work Unit\SurfaceType\Ice" GUID="{40E4B855-DC6C-4F76-BFA5-4CB0931B9609}"/>
+						<Switch Id="437659151" Name="Rubber" ObjectPath="\Switches\Default Work Unit\SurfaceType\Rubber" GUID="{694E179A-2A1D-42FD-98A5-E7FF91D446CD}"/>
+						<Switch Id="787898836" Name="Snow" ObjectPath="\Switches\Default Work Unit\SurfaceType\Snow" GUID="{0919D529-E93C-474F-BE32-0F8400E1B5AD}"/>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\SurfaceType\Concrete" GUID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}"/>
+						<Switch Id="1127618254" Name="Marble" ObjectPath="\Switches\Default Work Unit\SurfaceType\Marble" GUID="{B76B304A-5090-492D-9152-DC8B7C5E781C}"/>
+						<Switch Id="1791601991" Name="Parquet" ObjectPath="\Switches\Default Work Unit\SurfaceType\Parquet" GUID="{6F2D098D-4AFC-45F6-A9ED-DF6B05F6D09C}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\SurfaceType\Wood" GUID="{1E24E84B-DDA8-425B-AE3B-98DFE57E2882}"/>
+						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\SurfaceType\Carpet" GUID="{1EBE6BA3-4E40-409D-832B-4E5ADA439155}"/>
+						<Switch Id="2449969375" Name="Glass" ObjectPath="\Switches\Default Work Unit\SurfaceType\Glass" GUID="{251623AB-8F05-4145-9E67-98F5882B8C20}"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\SurfaceType\Metal" GUID="{03863B7A-98FA-4E4E-A1A9-7E88D83DDB35}"/>
+						<Switch Id="2612187595" Name="WoodCreaky" ObjectPath="\Switches\Default Work Unit\SurfaceType\WoodCreaky" GUID="{23705024-1A16-470E-8D68-ACF76E4C139B}"/>
+						<Switch Id="2637485245" Name="Corpse" ObjectPath="\Switches\Default Work Unit\SurfaceType\Corpse" GUID="{49CDB05E-C52C-4BCA-9DE0-DC0376FE8CC6}"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\SurfaceType\Water" GUID="{3D81F4D3-DC9F-4236-9D68-8E9ABC9F18A6}"/>
+						<Switch Id="3513072909" Name="Branches" ObjectPath="\Switches\Default Work Unit\SurfaceType\Branches" GUID="{32B75EED-3B76-46E4-817F-DC334FE8094D}"/>
+						<Switch Id="3891783285" Name="MetalGratings" ObjectPath="\Switches\Default Work Unit\SurfaceType\MetalGratings" GUID="{A5AE9E6B-76FF-4DD0-8F9D-D1C24FBF770E}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3117332691" Name="intFootPlant" ObjectPath="\Switches\Default Work Unit\intFootPlant" GUID="{C3D5E06B-7437-448E-A523-4CAC2EA7F86F}">
+					<GameParameterRef Id="3621444635"/>
+					<Switches>
+						<Switch Id="670602561" Name="Soft" ObjectPath="\Switches\Default Work Unit\intFootPlant\Soft" GUID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}"/>
+						<Switch Id="3599861390" Name="Hard" ObjectPath="\Switches\Default Work Unit\intFootPlant\Hard" GUID="{6D799617-FF75-4F84-85AC-93F6E318D6CE}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3587484858" Name="LocomotionType" ObjectPath="\Switches\Default Work Unit\LocomotionType" GUID="{02827571-3A46-4BB5-8961-284B9AAF0A5F}">
+					<Switches>
+						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\Default Work Unit\LocomotionType\Walking" GUID="{0D7AA56E-1758-4F27-99C6-BB00E17849E4}"/>
+						<Switch Id="499013305" Name="Crouching" ObjectPath="\Switches\Default Work Unit\LocomotionType\Crouching" GUID="{ACD88F56-7394-4F9F-88F1-872A8AAB6AE8}"/>
+						<Switch Id="503499828" Name="Turning" ObjectPath="\Switches\Default Work Unit\LocomotionType\Turning" GUID="{72A4F292-A3FB-46AB-9210-131A2DCA804A}"/>
+						<Switch Id="1861082004" Name="FootPlant" ObjectPath="\Switches\Default Work Unit\LocomotionType\FootPlant" GUID="{95F3458A-02EE-48C6-9EB9-69FBB5E40907}"/>
+						<Switch Id="1961208145" Name="Ascending" ObjectPath="\Switches\Default Work Unit\LocomotionType\Ascending" GUID="{3343DF11-7609-45CE-8C6C-BA8CFEAF1666}"/>
+						<Switch Id="3654333339" Name="Descending" ObjectPath="\Switches\Default Work Unit\LocomotionType\Descending" GUID="{1A300CB4-6EB3-4850-873F-3EC76609DB05}"/>
+						<Switch Id="3691594375" Name="Sprinting" ObjectPath="\Switches\Default Work Unit\LocomotionType\Sprinting" GUID="{1E482B13-B25D-4432-95CD-0B3831EB7B3F}"/>
+						<Switch Id="3863236874" Name="Running" ObjectPath="\Switches\Default Work Unit\LocomotionType\Running" GUID="{885AB1BE-D64D-4C72-8833-03174D5968AB}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Brick" GUID="{B086A5A9-F204-4C53-A838-BDB18B18F6D6}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Mountain" GUID="{C5933731-001A-4AB4-98DD-9B033A8C8EAB}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Concrete" GUID="{5CF81C00-2896-4AE0-AF7C-3080BDABA682}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Deep" GUID="{5246478E-C5DA-4E0C-A0DE-C98D1479529A}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Anechoic" GUID="{8B0AC232-02E2-4EDE-BEAC-FDD1A900E3ED}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Fabric" GUID="{8381D532-DB6E-4EED-A7A3-BC7B0A0B8BA8}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood" GUID="{1FFFBC96-6FE7-489E-BA6C-7C14A71391AE}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Carpet" GUID="{34227589-DC56-4260-96C4-B9F4B669092B}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Tile" GUID="{A882DAC4-132A-47B7-BA9D-B9907BA29CC0}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Curtains" GUID="{F8E69E33-5C97-4968-B508-A1535F2D66E8}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Cork_Tiles" GUID="{30D2C919-925F-4143-8906-3DBB3C4AE5E2}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Drywall" GUID="{68A4E3F4-4C0B-4687-A8B8-A84DB93DBC8F}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Acoustic_Banner" GUID="{2F2D53F2-DACC-408E-8B88-98B1B52A26D6}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright" ObjectPath="\Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Bright" GUID="{7B85D1E5-C1A2-4E63-9A13-CEC54B641ADC}">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="3157003241" Type="User" GUID="{A8DE5848-A672-48DC-A4D2-1B01B8E0AB83}" Language="SFX" Hash="{82F58C59-FB81-BBB6-00D2-776E2CAEA9B3}">
+			<ObjectPath>\SoundBanks\Default Work Unit\test</ObjectPath>
+			<ShortName>test</ShortName>
+			<Path>test.bnk</Path>
+			<Media>
+				<File Id="53219981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest.wav</ShortName>
+					<CachePath>SFX/Forest_A1411E78.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" GUID="{07F5F544-6B6C-4C98-8488-BE0FFD3B44C9}" DurationType="OneShot" DurationMin="1.5837083" DurationMax="1.5837083">
+					<MediaRefs>
+						<MediaRef Id="53219981"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4056684167" Type="User" GUID="{0B7223CA-DFE1-463A-8D66-2BDAC7FA2847}" Language="SFX" Hash="{B27E7A52-56E8-74A1-1650-878C7F38ABEA}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="22215137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_09.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_09_8E324C96.wem</CachePath>
+				</File>
+				<File Id="39859574" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_06.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_06_8E324C96.wem</CachePath>
+				</File>
+				<File Id="53219981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Forest.wav</ShortName>
+					<CachePath>SFX/Forest_A1411E78.wem</CachePath>
+				</File>
+				<File Id="89323189" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_08.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_08_8E324C96.wem</CachePath>
+				</File>
+				<File Id="124098580" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_06.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_06_8E324C96.wem</CachePath>
+				</File>
+				<File Id="162739623" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_01.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_01_8E324C96.wem</CachePath>
+				</File>
+				<File Id="176080295" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_04.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_04_8E324C96.wem</CachePath>
+				</File>
+				<File Id="188761348" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_07.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_07_8E324C96.wem</CachePath>
+				</File>
+				<File Id="203733624" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_02.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_02_8E324C96.wem</CachePath>
+				</File>
+				<File Id="270194006" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_09.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_09_8E324C96.wem</CachePath>
+				</File>
+				<File Id="275954565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_07.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_07_8E324C96.wem</CachePath>
+				</File>
+				<File Id="313256218" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_05.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_05_8E324C96.wem</CachePath>
+				</File>
+				<File Id="355330665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_01.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_01_8E324C96.wem</CachePath>
+				</File>
+				<File Id="389105870" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_06.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_06_8E324C96.wem</CachePath>
+				</File>
+				<File Id="424692934" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_04.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_04_8E324C96.wem</CachePath>
+				</File>
+				<File Id="440186460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_11.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_11_8E324C96.wem</CachePath>
+				</File>
+				<File Id="440373490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_03.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_03_8E324C96.wem</CachePath>
+				</File>
+				<File Id="448651826" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoClothes\Clothes_draft_layer01.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoClothes/Clothes_draft_layer01_D3D602BC.wem</CachePath>
+				</File>
+				<File Id="471642196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_04.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_04_8E324C96.wem</CachePath>
+				</File>
+				<File Id="489768321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_05.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_05_8E324C96.wem</CachePath>
+				</File>
+				<File Id="505267795" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_04.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_04_8E324C96.wem</CachePath>
+				</File>
+				<File Id="517057207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_07.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_07_8E324C96.wem</CachePath>
+				</File>
+				<File Id="613321396" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_05.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_05_8E324C96.wem</CachePath>
+				</File>
+				<File Id="631132136" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_03.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_03_8E324C96.wem</CachePath>
+				</File>
+				<File Id="665399555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_03.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_03_8E324C96.wem</CachePath>
+				</File>
+				<File Id="681831997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_03.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_03_8E324C96.wem</CachePath>
+				</File>
+				<File Id="684821647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_05.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_05_8E324C96.wem</CachePath>
+				</File>
+				<File Id="691919377" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_01.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_01_8E324C96.wem</CachePath>
+				</File>
+				<File Id="693094671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_06.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_06_8E324C96.wem</CachePath>
+				</File>
+				<File Id="758700365" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_02.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_02_8E324C96.wem</CachePath>
+				</File>
+				<File Id="775365675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_07.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_07_8E324C96.wem</CachePath>
+				</File>
+				<File Id="836376308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_soft_demo_surface_01.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_soft_demo_surface_01_8E324C96.wem</CachePath>
+				</File>
+				<File Id="859550233" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_08.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_08_8E324C96.wem</CachePath>
+				</File>
+				<File Id="866839412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_10.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_10_8E324C96.wem</CachePath>
+				</File>
+				<File Id="927137353" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_08.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_08_8E324C96.wem</CachePath>
+				</File>
+				<File Id="939097620" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_FootPlant_hard_demo_surface_02.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_FootPlant_hard_demo_surface_02_8E324C96.wem</CachePath>
+				</File>
+				<File Id="955811750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Running_demo_surface_02.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Running_demo_surface_02_8E324C96.wem</CachePath>
+				</File>
+				<File Id="1013115460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Character\Locomotion\DemoLocomotion\footstep_Walking_demo_surface_10.wav</ShortName>
+					<CachePath>SFX/Character/Locomotion/DemoLocomotion/footstep_Walking_demo_surface_10_8E324C96.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="705739452" Name="CharacterFootstep" ObjectPath="\Events\Character\CharacterLocomotion\CharacterFootstep" GUID="{D001A112-9BBD-42AF-9C0A-EBD89118462A}" DurationType="OneShot" DurationMin="0.12501134" DurationMax="0.5297316">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3587484858" Id="340271938" GUID="{0D7AA56E-1758-4F27-99C6-BB00E17849E4}"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460" GUID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="22215137"/>
+										<MediaRef Id="39859574"/>
+										<MediaRef Id="188761348"/>
+										<MediaRef Id="355330665"/>
+										<MediaRef Id="471642196"/>
+										<MediaRef Id="613321396"/>
+										<MediaRef Id="681831997"/>
+										<MediaRef Id="758700365"/>
+										<MediaRef Id="927137353"/>
+										<MediaRef Id="1013115460"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3587484858" Id="1861082004" GUID="{95F3458A-02EE-48C6-9EB9-69FBB5E40907}"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460" GUID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" Default="true"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="Switch" GroupId="3117332691" Id="3599861390" GUID="{6D799617-FF75-4F84-85AC-93F6E318D6CE}"/>
+											<MediaRefs>
+												<MediaRef Id="162739623"/>
+												<MediaRef Id="275954565"/>
+												<MediaRef Id="440373490"/>
+												<MediaRef Id="505267795"/>
+												<MediaRef Id="684821647"/>
+												<MediaRef Id="693094671"/>
+												<MediaRef Id="859550233"/>
+												<MediaRef Id="939097620"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="Switch" GroupId="3117332691" Id="670602561" GUID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}" Default="true"/>
+											<MediaRefs>
+												<MediaRef Id="124098580"/>
+												<MediaRef Id="176080295"/>
+												<MediaRef Id="203733624"/>
+												<MediaRef Id="313256218"/>
+												<MediaRef Id="517057207"/>
+												<MediaRef Id="631132136"/>
+												<MediaRef Id="836376308"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3587484858" Id="3863236874" GUID="{885AB1BE-D64D-4C72-8833-03174D5968AB}" Default="true"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460" GUID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="89323189"/>
+										<MediaRef Id="270194006"/>
+										<MediaRef Id="389105870"/>
+										<MediaRef Id="424692934"/>
+										<MediaRef Id="440186460"/>
+										<MediaRef Id="489768321"/>
+										<MediaRef Id="665399555"/>
+										<MediaRef Id="691919377"/>
+										<MediaRef Id="775365675"/>
+										<MediaRef Id="866839412"/>
+										<MediaRef Id="955811750"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="928320794" Name="TestClothesRun" ObjectPath="\Events\Character\LocomotionTestEvents\TestClothesRun" GUID="{09B85762-5AE1-420F-A72A-44EC9DDE5BD3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3097777697" Name="TestClothesStart" ObjectPath="\Events\Character\LocomotionTestEvents\TestClothesStart" GUID="{92FBD80F-FDF7-40F4-9DA7-58ACFEF486D7}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="448651826"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" GUID="{07F5F544-6B6C-4C98-8488-BE0FFD3B44C9}" DurationType="OneShot" DurationMin="1.5837083" DurationMax="1.5837083">
+					<MediaRefs>
+						<MediaRef Id="53219981"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="660234746" Name="CharacterClothesVelocityHorzontal" ObjectPath="\Game Parameters\Default Work Unit\CharacterClothesVelocityHorzontal" GUID="{3C8F82AB-C48D-4122-B592-D06990782375}"/>
+				<GameParameter Id="3621444635" Name="CharacterLocomotionVelocityHorzontal" ObjectPath="\Game Parameters\Default Work Unit\CharacterLocomotionVelocityHorzontal" GUID="{341D3B1F-A45F-47D6-B3F8-8728DE1FB462}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="63790334" Name="SurfaceType" ObjectPath="\Switches\Default Work Unit\SurfaceType" GUID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}">
+					<Switches>
+						<Switch Id="344481046" Name="Ice" ObjectPath="\Switches\Default Work Unit\SurfaceType\Ice" GUID="{40E4B855-DC6C-4F76-BFA5-4CB0931B9609}"/>
+						<Switch Id="437659151" Name="Rubber" ObjectPath="\Switches\Default Work Unit\SurfaceType\Rubber" GUID="{694E179A-2A1D-42FD-98A5-E7FF91D446CD}"/>
+						<Switch Id="787898836" Name="Snow" ObjectPath="\Switches\Default Work Unit\SurfaceType\Snow" GUID="{0919D529-E93C-474F-BE32-0F8400E1B5AD}"/>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\SurfaceType\Concrete" GUID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}"/>
+						<Switch Id="1127618254" Name="Marble" ObjectPath="\Switches\Default Work Unit\SurfaceType\Marble" GUID="{B76B304A-5090-492D-9152-DC8B7C5E781C}"/>
+						<Switch Id="1791601991" Name="Parquet" ObjectPath="\Switches\Default Work Unit\SurfaceType\Parquet" GUID="{6F2D098D-4AFC-45F6-A9ED-DF6B05F6D09C}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\SurfaceType\Wood" GUID="{1E24E84B-DDA8-425B-AE3B-98DFE57E2882}"/>
+						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\SurfaceType\Carpet" GUID="{1EBE6BA3-4E40-409D-832B-4E5ADA439155}"/>
+						<Switch Id="2449969375" Name="Glass" ObjectPath="\Switches\Default Work Unit\SurfaceType\Glass" GUID="{251623AB-8F05-4145-9E67-98F5882B8C20}"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\SurfaceType\Metal" GUID="{03863B7A-98FA-4E4E-A1A9-7E88D83DDB35}"/>
+						<Switch Id="2612187595" Name="WoodCreaky" ObjectPath="\Switches\Default Work Unit\SurfaceType\WoodCreaky" GUID="{23705024-1A16-470E-8D68-ACF76E4C139B}"/>
+						<Switch Id="2637485245" Name="Corpse" ObjectPath="\Switches\Default Work Unit\SurfaceType\Corpse" GUID="{49CDB05E-C52C-4BCA-9DE0-DC0376FE8CC6}"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\SurfaceType\Water" GUID="{3D81F4D3-DC9F-4236-9D68-8E9ABC9F18A6}"/>
+						<Switch Id="3513072909" Name="Branches" ObjectPath="\Switches\Default Work Unit\SurfaceType\Branches" GUID="{32B75EED-3B76-46E4-817F-DC334FE8094D}"/>
+						<Switch Id="3891783285" Name="MetalGratings" ObjectPath="\Switches\Default Work Unit\SurfaceType\MetalGratings" GUID="{A5AE9E6B-76FF-4DD0-8F9D-D1C24FBF770E}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3117332691" Name="intFootPlant" ObjectPath="\Switches\Default Work Unit\intFootPlant" GUID="{C3D5E06B-7437-448E-A523-4CAC2EA7F86F}">
+					<GameParameterRef Id="3621444635"/>
+					<Switches>
+						<Switch Id="670602561" Name="Soft" ObjectPath="\Switches\Default Work Unit\intFootPlant\Soft" GUID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}"/>
+						<Switch Id="3599861390" Name="Hard" ObjectPath="\Switches\Default Work Unit\intFootPlant\Hard" GUID="{6D799617-FF75-4F84-85AC-93F6E318D6CE}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3587484858" Name="LocomotionType" ObjectPath="\Switches\Default Work Unit\LocomotionType" GUID="{02827571-3A46-4BB5-8961-284B9AAF0A5F}">
+					<Switches>
+						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\Default Work Unit\LocomotionType\Walking" GUID="{0D7AA56E-1758-4F27-99C6-BB00E17849E4}"/>
+						<Switch Id="499013305" Name="Crouching" ObjectPath="\Switches\Default Work Unit\LocomotionType\Crouching" GUID="{ACD88F56-7394-4F9F-88F1-872A8AAB6AE8}"/>
+						<Switch Id="503499828" Name="Turning" ObjectPath="\Switches\Default Work Unit\LocomotionType\Turning" GUID="{72A4F292-A3FB-46AB-9210-131A2DCA804A}"/>
+						<Switch Id="1861082004" Name="FootPlant" ObjectPath="\Switches\Default Work Unit\LocomotionType\FootPlant" GUID="{95F3458A-02EE-48C6-9EB9-69FBB5E40907}"/>
+						<Switch Id="1961208145" Name="Ascending" ObjectPath="\Switches\Default Work Unit\LocomotionType\Ascending" GUID="{3343DF11-7609-45CE-8C6C-BA8CFEAF1666}"/>
+						<Switch Id="3654333339" Name="Descending" ObjectPath="\Switches\Default Work Unit\LocomotionType\Descending" GUID="{1A300CB4-6EB3-4850-873F-3EC76609DB05}"/>
+						<Switch Id="3691594375" Name="Sprinting" ObjectPath="\Switches\Default Work Unit\LocomotionType\Sprinting" GUID="{1E482B13-B25D-4432-95CD-0B3831EB7B3F}"/>
+						<Switch Id="3863236874" Name="Running" ObjectPath="\Switches\Default Work Unit\LocomotionType\Running" GUID="{885AB1BE-D64D-4C72-8833-03174D5968AB}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{6E4414A2-2E30-D481-2A17-C4BB3466B9F6}</FileHash>
+</SoundBanksInfo>

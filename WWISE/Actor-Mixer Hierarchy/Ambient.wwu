@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{01EC56C1-21CF-4658-AD99-AA0938F76FB2}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Ambient" ID="{01EC56C1-21CF-4658-AD99-AA0938F76FB2}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Ambient" ID="{342D9A36-C4D6-47CC-B52F-DB909A04EED2}" ShortID="966820453">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1C6D2B9-0274-4569-BCF5-3EF3D7CD98B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

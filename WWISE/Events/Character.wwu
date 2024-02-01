@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5FF2BE61-8F06-44EB-AA91-7FFE03E3BE42}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Character" ID="{5FF2BE61-8F06-44EB-AA91-7FFE03E3BE42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="CharacterLocomotion" ID="{8DF3002B-CF14-44A8-AB09-7C03AF103FED}" ShortID="461615216">
+					<ChildrenList>
+						<Event Name="CharacterFootstep" ID="{D001A112-9BBD-42AF-9C0A-EBD89118462A}">
+							<ChildrenList>
+								<Action Name="" ID="{64FB8CD3-4095-4921-8ADC-B91D8E112658}" ShortID="740147293">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CharacterFootstep" ID="{8682E987-4539-4CCE-BBA8-47067FD147BF}" WorkUnitID="{A79AF1FA-EA88-417E-A3B3-5DCEC7C50234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="LocomotionTestEvents" ID="{1CFB52EB-0987-46CA-A5E9-9E8F4F83157D}" ShortID="859887141">
+					<ChildrenList>
+						<Event Name="TestClothesRun" ID="{09B85762-5AE1-420F-A72A-44EC9DDE5BD3}">
+							<ChildrenList>
+								<Action Name="" ID="{7FD7470A-59AE-48AE-A6B2-E22654BB1130}" ShortID="177282842">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="120"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9CFB75C5-10CD-42CE-AD39-0E4B78509A03}" ShortID="52813596">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="120"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CharacterClothesVelocityHorzontal" ID="{3C8F82AB-C48D-4122-B592-D06990782375}" WorkUnitID="{45B6C084-512F-4B14-922F-50FA3878037C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TestClothesStart" ID="{92FBD80F-FDF7-40F4-9DA7-58ACFEF486D7}">
+							<ChildrenList>
+								<Action Name="" ID="{853F10B2-A974-41D9-875C-A05AC9AB6130}" ShortID="840902475">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clothes_draft_layer01" ID="{501CC493-2865-4392-9142-E1FF76652B94}" WorkUnitID="{A79AF1FA-EA88-417E-A3B3-5DCEC7C50234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

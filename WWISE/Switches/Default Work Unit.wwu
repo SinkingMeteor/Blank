@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{C4FEB413-A6E0-49CE-949B-FDEA3761CD73}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="LocomotionType" ID="{02827571-3A46-4BB5-8961-284B9AAF0A5F}">
+					<ChildrenList>
+						<Switch Name="Running" ID="{885AB1BE-D64D-4C72-8833-03174D5968AB}"/>
+						<Switch Name="Walking" ID="{0D7AA56E-1758-4F27-99C6-BB00E17849E4}"/>
+						<Switch Name="Crouching" ID="{ACD88F56-7394-4F9F-88F1-872A8AAB6AE8}"/>
+						<Switch Name="Sprinting" ID="{1E482B13-B25D-4432-95CD-0B3831EB7B3F}"/>
+						<Switch Name="Ascending" ID="{3343DF11-7609-45CE-8C6C-BA8CFEAF1666}"/>
+						<Switch Name="Descending" ID="{1A300CB4-6EB3-4850-873F-3EC76609DB05}"/>
+						<Switch Name="Turning" ID="{72A4F292-A3FB-46AB-9210-131A2DCA804A}"/>
+						<Switch Name="FootPlant" ID="{95F3458A-02EE-48C6-9EB9-69FBB5E40907}">
+							<Comment>Постановка ноги</Comment>
+						</Switch>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SurfaceType" ID="{F8F1DD8E-0067-4C72-B74A-19993204AFDF}">
+					<ChildrenList>
+						<Switch Name="Marble" ID="{B76B304A-5090-492D-9152-DC8B7C5E781C}">
+							<Comment>Мрамор</Comment>
+						</Switch>
+						<Switch Name="Parquet" ID="{6F2D098D-4AFC-45F6-A9ED-DF6B05F6D09C}">
+							<Comment>Паркет</Comment>
+						</Switch>
+						<Switch Name="Carpet" ID="{1EBE6BA3-4E40-409D-832B-4E5ADA439155}">
+							<Comment>Ковровые покрытия</Comment>
+						</Switch>
+						<Switch Name="Metal" ID="{03863B7A-98FA-4E4E-A1A9-7E88D83DDB35}">
+							<Comment>Метал плотный</Comment>
+						</Switch>
+						<Switch Name="MetalGratings" ID="{A5AE9E6B-76FF-4DD0-8F9D-D1C24FBF770E}">
+							<Comment>Метал решетки</Comment>
+						</Switch>
+						<Switch Name="Concrete" ID="{8D8F8275-A186-45CE-A8AB-C274629C4AC9}">
+							<Comment>Бетон</Comment>
+						</Switch>
+						<Switch Name="Rubber" ID="{694E179A-2A1D-42FD-98A5-E7FF91D446CD}">
+							<Comment>Резиновые коврики</Comment>
+						</Switch>
+						<Switch Name="Water" ID="{3D81F4D3-DC9F-4236-9D68-8E9ABC9F18A6}"/>
+						<Switch Name="Corpse" ID="{49CDB05E-C52C-4BCA-9DE0-DC0376FE8CC6}"/>
+						<Switch Name="Snow" ID="{0919D529-E93C-474F-BE32-0F8400E1B5AD}"/>
+						<Switch Name="Ice" ID="{40E4B855-DC6C-4F76-BFA5-4CB0931B9609}"/>
+						<Switch Name="Wood" ID="{1E24E84B-DDA8-425B-AE3B-98DFE57E2882}"/>
+						<Switch Name="WoodCreaky" ID="{23705024-1A16-470E-8D68-ACF76E4C139B}"/>
+						<Switch Name="Glass" ID="{251623AB-8F05-4145-9E67-98F5882B8C20}"/>
+						<Switch Name="Branches" ID="{32B75EED-3B76-46E4-817F-DC334FE8094D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="intFootPlant" ID="{C3D5E06B-7437-448E-A523-4CAC2EA7F86F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Soft" ID="{4DBBCFCD-9CB5-4704-BCF7-1376E0A362FC}"/>
+						<Switch Name="Hard" ID="{6D799617-FF75-4F84-85AC-93F6E318D6CE}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="CharacterLocomotionVelocityHorzontal" ID="{341D3B1F-A45F-47D6-B3F8-8728DE1FB462}"/>
+						<Curve Name="" ID="{F140128C-04AC-4F8D-85B2-143C7D62E87C}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.50046</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

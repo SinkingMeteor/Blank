@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12D1FB3F-9487-485F-87EC-A83DDFD59B9C}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{12D1FB3F-9487-485F-87EC-A83DDFD59B9C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TestSound" ID="{B5D2FC76-0330-4375-BF07-8C7095A4E1E6}" ShortID="370906409">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1C6D2B9-0274-4569-BCF5-3EF3D7CD98B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FBECDDB-9817-4431-9FAA-097BA6A365EC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Forest" ID="{0F7A41D6-386D-4379-86FA-08291EFEEDB8}">
+							<PropertyList>
+								<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Forest.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="53219981"/>
+							</MediaIDList>
+							<ObjectLists>
+								<ObjectList Name="Markers">
+									<Reference>
+										<Local>
+											<Marker Name="" ID="{0AC68BC4-8799-4840-AF77-D8EDD00C656E}">
+												<PropertyList>
+													<Property Name="Label" Type="string" Value="Shoot echo complete"/>
+													<Property Name="Time" Type="Real64" Value="0.495558625091174"/>
+												</PropertyList>
+											</Marker>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Forest" ID="{0F7A41D6-386D-4379-86FA-08291EFEEDB8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

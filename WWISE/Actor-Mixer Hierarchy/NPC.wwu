@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{92D27D33-A9C6-46DF-91A7-2A972B364EA7}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="NPC" ID="{92D27D33-A9C6-46DF-91A7-2A972B364EA7}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

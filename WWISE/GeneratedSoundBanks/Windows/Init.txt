@@ -1,0 +1,55 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3117332691	intFootPlant			\Default Work Unit\intFootPlant	
+
+Switch	ID	Name	Switch Group			Notes
+	670602561	Soft	intFootPlant			
+	3599861390	Hard	intFootPlant			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	52935627	MenuVolumeMusic			\Settings\MenuVolumeMusic	Внешний RTPC - громкость музыки     0 - громкость выключена 100 - максимальная громкость 
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	708079367	MenuVolumeSFX			\Settings\MenuVolumeSFX	Внешний RTPC - громкость эффектов (окружения, движения и прочего)     0 - громкость выключена 100 - максимальная громкость 
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1162501248	MenuVolumeMaster			\Settings\MenuVolumeMaster	Внешний RTPC - общая громкость     0 - громкость выключена 100 - максимальная громкость 
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3586738556	MenuVolumeVoice			\Settings\MenuVolumeVoice	Внешний RTPC - громкость диалогов     0 - громкость выключена 100 - максимальная громкость 
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\HDR\Ambient	
+	245700991	NPCEfforts			\Default Work Unit\Master Audio Bus\HDR\NPC\NPCEfforts	
+	436743010	Character			\Default Work Unit\Master Audio Bus\HDR\Character	
+	566114453	CharacterLocomotion			\Default Work Unit\Master Audio Bus\HDR\Character\CharacterLocomotion	
+	662417162	NPC			\Default Work Unit\Master Audio Bus\HDR\NPC	
+	869042049	VOCharacter			\Default Work Unit\Master Audio Bus\VO\VOCharacter	
+	931844945	HDR			\Default Work Unit\Master Audio Bus\HDR	
+	1217116541	NPCLocomotion			\Default Work Unit\Master Audio Bus\HDR\NPC\NPCLocomotion	
+	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	1838596016	Cinematic			\Default Work Unit\Master Audio Bus\Cinematic	
+	2649473473	VONPC			\Default Work Unit\Master Audio Bus\VO\VONPC	
+	2785569367	MusicDrones			\Default Work Unit\Master Audio Bus\HDR\MusicDrones	
+	3099290199	CharacterEfforts			\Default Work Unit\Master Audio Bus\HDR\Character\CharacterEfforts	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3934156282	Ambient3D			\Default Work Unit\Master Audio Bus\HDR\Ambient\Ambient3D	
+	3950933845	Ambient2D			\Default Work Unit\Master Audio Bus\HDR\Ambient\Ambient2D	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4000439062	NPCCombat			\Default Work Unit\Master Audio Bus\HDR\NPC\NPCCombat	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	4045295900	Reverb01			\Default Work Unit\Master Audio Bus\Reverb01	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
