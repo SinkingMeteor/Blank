@@ -30,20 +30,19 @@ using Tools.DotNETCommon;
 
 public struct WwiseSoundEngine_2023_1
 {
-	private static List<string> AkLibs = new List<string> 
-	{
-		"AkSoundEngine",
-		"AkMemoryMgr",
-		"AkStreamMgr",
-		"AkMusicEngine",
-		"AkSpatialAudio",
-		"AkAudioInputSource",
-		"AkVorbisDecoder",
-		"AkMeterFX", // AkMeter does not have a dedicated DLL
-	};
-	
 	public static void Apply(WwiseSoundEngine SE, ReadOnlyTargetRules Target, bool Latest = false)
 	{
+		List<string> AkLibs = new List<string> 
+		{
+			"AkSoundEngine",
+			"AkMemoryMgr",
+			"AkStreamMgr",
+			"AkMusicEngine",
+			"AkSpatialAudio",
+			"AkAudioInputSource",
+			"AkVorbisDecoder",
+			"AkMeterFX", // AkMeter does not have a dedicated DLL
+		};
 #if UE_5_3_OR_LATER
 		ILogger Logger = Target.Logger;
 #endif
@@ -108,7 +107,7 @@ public struct WwiseSoundEngine_2023_1
 			SE.PublicDefinitions.Add("AK_ENABLE_ASSERTS");
 		}
 
-		if (Target.Configuration != UnrealTargetConfiguration.Shipping && WwiseUEPlatformInstance.SupportsCommunication)
+		if (Target.Configuration != UnrealTargetConfiguration.Shipping && Target.Configuration != UnrealTargetConfiguration.Test && WwiseUEPlatformInstance.SupportsCommunication)
 		{
 			AkLibs.Add("CommunicationCentral");
 			SE.PublicDefinitions.Add("AK_ENABLE_COMMUNICATION=1");
