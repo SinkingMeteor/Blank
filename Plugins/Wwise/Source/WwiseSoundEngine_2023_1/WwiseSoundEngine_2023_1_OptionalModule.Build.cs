@@ -30,19 +30,20 @@ using Tools.DotNETCommon;
 
 public struct WwiseSoundEngine_2023_1
 {
+	private static List<string> AkLibs = new List<string> 
+	{
+		"AkSoundEngine",
+		"AkMemoryMgr",
+		"AkStreamMgr",
+		"AkMusicEngine",
+		"AkSpatialAudio",
+		"AkAudioInputSource",
+		"AkVorbisDecoder",
+		"AkMeterFX", // AkMeter does not have a dedicated DLL
+	};
+	
 	public static void Apply(WwiseSoundEngine SE, ReadOnlyTargetRules Target, bool Latest = false)
 	{
-		List<string> AkLibs = new List<string> 
-		{
-			"AkSoundEngine",
-			"AkMemoryMgr",
-			"AkStreamMgr",
-			"AkMusicEngine",
-			"AkSpatialAudio",
-			"AkAudioInputSource",
-			"AkVorbisDecoder",
-			"AkMeterFX", // AkMeter does not have a dedicated DLL
-		};
 #if UE_5_3_OR_LATER
 		ILogger Logger = Target.Logger;
 #endif
