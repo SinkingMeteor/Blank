@@ -128,13 +128,13 @@ public abstract class WwiseUEPlatform
 			{
 				case UnrealTargetConfiguration.Debug:
 				case UnrealTargetConfiguration.DebugGame:
-				case UnrealTargetConfiguration.Test:
 					return "Debug";
 
 				case UnrealTargetConfiguration.Development:
 				default:
 					return "Profile";
 
+				case UnrealTargetConfiguration.Test:
 				case UnrealTargetConfiguration.Shipping:
 					return "Release";
 			}
